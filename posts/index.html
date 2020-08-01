@@ -8,7 +8,7 @@ permalink: /posts/
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>
-    {% if post.subtitle %} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    {% if post.subtitle %}
     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
     {% else %}
     <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
@@ -16,7 +16,7 @@ permalink: /posts/
   </a>
   <p class="post-meta">Posted byyyyyyyyyyy
     {% if post.author %}
-    {{ post.author }}aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    {{ post.author }}
     {% else %}
     {{ site.author }}
     {% endif %}
